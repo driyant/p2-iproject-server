@@ -1,0 +1,10 @@
+[
+  {
+    "ticketEvent" : "Jazz Festival",
+    "price" : 200000,
+    "stock" : 100,
+    "venue" : "Ballroom Venue Street 20ABC",
+    "date" : "31-12-2022",
+    "time" : "15.00"
+  }
+]

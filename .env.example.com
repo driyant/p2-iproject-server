@@ -1,0 +1,1 @@
+SECRET_KEY = "AaeZaz21!@AWQ"

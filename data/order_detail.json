@@ -1,0 +1,12 @@
+[
+  {
+    "UserId" : 2,
+    "TicketId" : 1,
+    "status" : "paid"
+  },
+  {
+    "UserId" : 3,
+    "TicketId" : 1,
+    "status" : "booked"
+  }
+]

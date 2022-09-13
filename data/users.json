@@ -1,0 +1,26 @@
+[
+  {
+    "username" : "johndoe",
+    "email" : "johndoe@example.com",
+    "fullName": "John Doe",
+    "password" : "john123",
+    "phoneNumber" : "082723612332",
+    "role" : "admin"
+  },
+  {
+    "username" : "alex",
+    "email" : "alex@example.com",
+    "fullName": "Alex Gordon",
+    "password" : "alex123",
+    "phoneNumber" : "081271231243",
+    "role" : "customer"
+  },
+  {
+    "username" : "thomas",
+    "email" : "thomas@example.com",
+    "fullName": "Thomas Ken",
+    "password" : "thomas123",
+    "phoneNumber" : "085732902193",
+    "role" : "customer"
+  }
+]
