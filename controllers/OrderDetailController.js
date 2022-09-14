@@ -32,12 +32,12 @@ class OrderDetailController {
     const { TicketId } = req.params;
     const { id } = req.user;
     try {
-      await Ticket.create({
+      await OrderDetail.create({
         UserId: id,
         TicketId: TicketId,
         status: "unpaid"
       })
-      req.status(201).json({
+      res.status(201).json({
         message: "Order ticket has been created successfully"
       })
     } catch (error) {
