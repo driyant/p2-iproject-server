@@ -18,7 +18,7 @@ router.post("/user/login", LoginController.login);
 
 // Route Ticket
 router.get("/ticket", TicketController.index);
-// router.post("/ticket", authentication, TicketController.create);
+router.post("/ticket", authentication, TicketController.create);
 
 // Route OrderDetail
 // router.get("/order", authentication, OrderDetailController.create);
@@ -27,6 +27,6 @@ router.get("/ticket", TicketController.index);
 router.post("/contact", ContactController.create);
 
 // Error Handler`
-// router.use(error)
+router.use(error)
 
 module.exports = router;

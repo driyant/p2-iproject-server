@@ -45,6 +45,15 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
+    time: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: "Time cannot be empty"
+        }
+      }
+    },
     venue: {
       type: DataTypes.STRING,
       allowNull: false,
