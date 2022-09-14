@@ -19,6 +19,7 @@ const authentication = async (req, res, next) => {
     req.user = {
       id: findUser.id,
       email: findUser.email,
+      role: findUser.role
     };
     next();
   } catch (error) {

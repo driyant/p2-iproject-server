@@ -36,6 +36,15 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
+    date: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: "Date cannot be empty"
+        }
+      }
+    },
     venue: {
       type: DataTypes.STRING,
       allowNull: false,

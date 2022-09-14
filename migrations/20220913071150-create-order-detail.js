@@ -11,10 +11,22 @@ module.exports = {
       UserId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: "Users",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE"
       },
       TicketId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: "Tickets",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE"
       },
       status: {
         type: Sequelize.STRING
