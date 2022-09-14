@@ -28,6 +28,23 @@ class OrderDetailController {
       next(error);
     }
   }
+  static async create(req, res, next) {
+    const { TicketId } = req.params;
+    const { id } = req.user;
+    try {
+      await Ticket.create({
+        UserId: id,
+        TicketId: TicketId,
+        status: "unpaid"
+      })
+      req.status(201).json({
+        message: "Order ticket has been created successfully"
+      })
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
 }
 
 module.exports = OrderDetailController;

@@ -23,6 +23,7 @@ router.patch("/ticket/:id", authentication, TicketController.updateStock);
 
 // Route OrderDetail
 router.get("/order", authentication, OrderDetailController.index);
+router.post("/order/:TicketId", authentication, OrderDetailController.create);
 
 // Route message
 router.post("/contact", ContactController.create);
