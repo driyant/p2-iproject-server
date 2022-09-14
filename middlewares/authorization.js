@@ -1,4 +1,4 @@
-import { User } from "../models";
+const { User } = require("../models");
 
 const authorization = async (req, res, next) => {
   // const { id } = req.params;
