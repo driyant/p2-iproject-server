@@ -26,7 +26,37 @@ class TicketController {
       })
     } catch (error) {
       console.log(error);
+      next(error)
     }
+  }
+  static async updateStock(req, res, next) {
+    const { id } = req.params;
+    const { stock } = req.body;
+    try {
+      const findTicket = await Ticket.findOne({
+        where: {
+          id: id
+        }
+      });
+      if (!findTicket) {
+        throw{
+          name: "TICKET_NOT_FOUND"
+        }
+      }
+      await Ticket.update({
+        stock: Number(stock)
+      }, {
+        where: {
+          id: id
+        }
+      });
+      res.status(200).json({
+        message: "Stock ticket has been updated"
+      })
+    } catch (error) {
+      console.log(error);
+      next(error);
+    } 
   }
 }
 

@@ -19,6 +19,7 @@ router.post("/user/login", LoginController.login);
 // Route Ticket
 router.get("/ticket", TicketController.index);
 router.post("/ticket", authentication, TicketController.create);
+router.patch("/ticket/:id", authentication, TicketController.updateStock);
 
 // Route OrderDetail
 // router.get("/order", authentication, OrderDetailController.create);
