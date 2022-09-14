@@ -11,6 +11,9 @@ const errors = (err, req, res, next) => {
   } else if (err.name === "JsonWebTokenError") {
     code = 401;
     message = "Invalid token";
+  } else if (err.name === "ORDER_ALREADY_EXIST") {
+    code = 400;
+    message = "This ticket order already exist";
   } else if (err.name === "TICKET_NOT_FOUND") {
     code = 404;
     message = "Ticket event not found";
