@@ -22,7 +22,7 @@ router.post("/ticket", authentication, TicketController.create);
 router.patch("/ticket/:id", authentication, TicketController.updateStock);
 
 // Route OrderDetail
-// router.get("/order", authentication, OrderDetailController.create);
+router.get("/order", authentication, OrderDetailController.index);
 
 // Route message
 router.post("/contact", ContactController.create);
