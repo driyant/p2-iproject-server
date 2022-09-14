@@ -4,7 +4,6 @@ class ContactController {
   static async create(req, res, next) {
     try {
       const { email, subject, message } = req.body;
-      console.log(req.body);
       let mailTransport = nodemailer.createTransport({
         host: process.env.HOST_MAIL,
         port: 465,
