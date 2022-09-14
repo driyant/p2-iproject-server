@@ -62,7 +62,10 @@ module.exports = (sequelize, DataTypes) => {
           msg: "Venue cannot be empty"
         }
       }
-    }
+    },
+    img_url: {
+      type: DataTypes.STRING,
+    },
   }, {
     sequelize,
     modelName: 'Ticket',

@@ -4,7 +4,26 @@
     "price" : 200000,
     "stock" : 100,
     "venue" : "Ballroom Venue Street 20ABC",
-    "date" : "31-12-2022",
-    "time" : "15.00"
+    "date" : "14-10-2022",
+    "time" : "15.00",
+    "img_url" : "https://images.pexels.com/photos/9009602/pexels-photo-9009602.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  {
+    "ticketEvent" : "Music November Fest",
+    "price" : 800000,
+    "stock" : 60,
+    "venue" : "Ballroom Venue Street 20ABC",
+    "date" : "14-11-2022",
+    "time" : "15.00",
+    "img_url" : "https://images.pexels.com/photos/5650703/pexels-photo-5650703.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  {
+    "ticketEvent" : "Music November Fest",
+    "price" : 1000000,
+    "stock" : 50,
+    "venue" : "Ballroom Venue Street 20ABC",
+    "date" : "15-11-2022",
+    "time" : "15.00",
+    "img_url" : "https://images.pexels.com/photos/7097460/pexels-photo-7097460.jpeg?auto=compress&cs=tinysrgb&w=1600"
   }
 ]
