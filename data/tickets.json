@@ -9,7 +9,7 @@
     "img_url" : "https://images.pexels.com/photos/9009602/pexels-photo-9009602.jpeg?auto=compress&cs=tinysrgb&w=1600"
   },
   {
-    "ticketEvent" : "Music November Fest",
+    "ticketEvent" : "Pop November Fest Family",
     "price" : 800000,
     "stock" : 60,
     "venue" : "Ballroom Venue Street 20ABC",
@@ -18,7 +18,7 @@
     "img_url" : "https://images.pexels.com/photos/5650703/pexels-photo-5650703.jpeg?auto=compress&cs=tinysrgb&w=1600"
   },
   {
-    "ticketEvent" : "Music November Fest",
+    "ticketEvent" : "Jazz November Fest",
     "price" : 1000000,
     "stock" : 50,
     "venue" : "Ballroom Venue Street 20ABC",

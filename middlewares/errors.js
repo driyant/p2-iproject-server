@@ -14,6 +14,12 @@ const errors = (err, req, res, next) => {
   } else if (err.name === "ORDER_ALREADY_EXIST") {
     code = 400;
     message = "This ticket order already exist";
+  } else if (err.name === "ORDER_NOT_FOUND") {
+    code = 404;
+    message = "Order not found"
+  } else if (err.name === "ORDER_IS_ALREADY_PAID") {
+    code = 400;
+    message = "Order has been paid"
   } else if (err.name === "TICKET_NOT_FOUND") {
     code = 404;
     message = "Ticket event not found";
