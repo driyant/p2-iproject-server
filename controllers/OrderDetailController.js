@@ -40,16 +40,6 @@ class OrderDetailController {
     const { TicketId } = req.params;
     const { id } = req.user;
     try {
-      const findTicketInOrder = await Ticket.findOne({
-        where: {
-          TicketId: TicketId,
-        },
-      });
-      if (!findTicketInOrder) {
-        throw {
-          name: "TICKET_NOT_FOUND",
-        };
-      }
       const findOrderDetail = await OrderDetail.findOne({
         where: {
           TicketId: TicketId,
@@ -150,9 +140,7 @@ class OrderDetailController {
           },
         }
       );
-      res.status(200).json({
-        message: "success update ticket",
-      });
+      
       const x = new Xendit({
         secretKey: `${process.env.API_KEY_PAY}`,
       });
@@ -160,13 +148,16 @@ class OrderDetailController {
       const qrcodeSpecificOptions = {};
       const q = new QrCode(qrcodeSpecificOptions);
       const resp_X = await q.createCode({
-        externalID: `ORDER_TESTING_1112310_${new Date().getTime()}`,
+        externalID: `ORDER_TESTING_${findOrder.id}_${new Date().getTime()}`,
         type: QrCode.Type.Dynamic,
-        callbackURL: "https://localhost:5173/callback",
+        callbackURL: "https://www.helloriyan.my.id",
         amount: `${findOrder.Ticket.price}`,
       });
       await q.simulate({
         externalID: `${resp_X.external_id}`,
+      });
+      res.status(200).json({
+        message: "success update ticket",
       });
     } catch (error) {
       console.log(error);
