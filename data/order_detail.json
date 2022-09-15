@@ -2,11 +2,11 @@
   {
     "UserId" : 2,
     "TicketId" : 1,
-    "status" : "paid"
+    "status" : "unpaid"
   },
   {
     "UserId" : 3,
     "TicketId" : 2,
-    "status" : "booked"
+    "status" : "unpaid"
   }
 ]
