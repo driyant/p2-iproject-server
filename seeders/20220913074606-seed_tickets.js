@@ -13,7 +13,7 @@ module.exports = {
     */
     const tickets = require("../data/tickets.json");
     tickets.forEach(ticket => {
-      ticket.createdAt = ticket.updatedAt = new Date();
+      ticket.date = ticket.createdAt = ticket.updatedAt = new Date();
     })
     await queryInterface.bulkInsert('Tickets', tickets, {});
   },
